@@ -1,0 +1,59 @@
+@use "../reset/var";
+
+nav {
+    width: 100%   ;
+    display: flex;
+    margin: 0 10px;
+    padding: 20px;
+    margin-top: 10px;
+    justify-content: space-between;
+
+}
+
+.logo{
+    img{
+        cursor: pointer;
+    }
+}
+
+.nav-ul{
+    margin-right: 70px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    li:hover{
+    color:var.$color-hover;
+    }
+
+
+    li{
+      margin-left:15px;
+      transition: 50ms;
+      font-size: 14px;
+      
+    }
+
+    li:first-child{
+        margin-left: 0px;
+    }
+
+    li:nth-child(2){
+        margin-right: 0px;
+    }
+
+    li:nth-child(3){
+        margin-left: 5px;
+    }
+}
+
+.icon{
+    img{
+        cursor: pointer;
+    }
+
+    img:first-child{
+        width: 24px;
+        height: 19px;
+}
+}
+

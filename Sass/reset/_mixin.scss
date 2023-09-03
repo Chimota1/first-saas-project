@@ -1,0 +1,50 @@
+@mixin header-1{
+    position: absolute; 
+    bottom: 50%;
+    right: 97%;
+    cursor: pointer;
+    transform: translate(0%, 50%);
+    z-index: 100;
+    
+}
+
+@mixin header-2{
+    position: absolute;
+    bottom: 50%;
+    left: 97%; 
+    cursor: pointer;
+    z-index: 100;
+  }
+@mixin under-line{
+    border-bottom: 3px black solid;
+    width: 194px;
+}
+
+@mixin goods{
+    width: 302.5px;
+    height: 396px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+@mixin bestAround{
+    background-color:rgba(248, 249, 250, 1);
+    width: 413px;
+    height: 453px;
+    border-radius: 16px;
+}
+
+@mixin exploreButton{
+    padding: 15px 65px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+
+@mixin footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    gap:10px;
+    p{
+        font-size: 19px;
+    }
+}

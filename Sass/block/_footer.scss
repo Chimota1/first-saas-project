@@ -1,0 +1,65 @@
+@use "../reset/mixin";
+
+@use "../reset/var";
+
+.footer{
+    display: flex;
+    gap: 70px;
+    width: 1275px;
+    height: 378px;
+    background-color: rgba(248, 249, 250, 1);
+    border-top:1px solid rgba(220, 229, 226, 1);
+    border-bottom: 1px solid rgba(220, 229, 226, 1);
+}
+
+.footer_logo{
+    width: 394px;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 73px;
+    margin-bottom: 64px;
+    img{
+        width: 181px;
+        margin-top: 55px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 21px;
+    }
+}
+
+.footer_all-products{
+    @include mixin.footer
+}
+
+.footer_company{
+    @include mixin.footer
+}
+
+.footer_support{
+    @include mixin.footer
+}
+
+
+.footer_follow{
+    @include mixin.footer
+}
+
+.made-by{
+    background-color:rgba(248, 249, 250, 1) ;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: end;
+    height: 78px;
+    width: 1275px;
+    a{
+        margin-left: 30px;
+    }
+
+    p{
+        margin-right: 30px;
+    }
+}
